@@ -66,7 +66,7 @@ vim.o.inccommand = 'split'
 vim.o.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.o.scrolloff = 10
+vim.o.scrolloff = 8
 
 -- if performing an operation that would fail due to unsaved changes in the buffer (like `:q`),
 -- instead raise a dialog asking if you wish to save the current file(s)
@@ -74,6 +74,7 @@ vim.o.scrolloff = 10
 vim.o.confirm = true
 
 vim.opt.wrap = true
+vim.cmd 'let g:netrw_banner = 0'
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
